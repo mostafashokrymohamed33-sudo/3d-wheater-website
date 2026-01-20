@@ -62,17 +62,6 @@ export default function ThreeScene(prop) {
         scene.add(mesh)
         cloudREF1.current=mesh
     })
-
-
-
-
-
-
-
-
-
-
-
     const renderer = new THREE.WebGLRenderer({
       canvas: canvasRef.current,
     });
@@ -80,13 +69,7 @@ export default function ThreeScene(prop) {
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setClearColor("rgba(0, 0, 0, 1)", 0);
     const controls = new OrbitControls(camera, renderer.domElement);
-
-
-
-
-
     const clock = new THREE.Clock();
-
     function animate() {
         let alpased =clock.elapsedTime
       requestAnimationFrame(animate);
